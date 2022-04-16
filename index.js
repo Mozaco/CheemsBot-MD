@@ -30,7 +30,7 @@ async function startXeonBotInc() {
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Subscribe Xeon','Safari','1.0.0'],
+        browser: ['𝘔𝘰𝘻𝘢𝘤𝘰𝘚𝘦𝘳','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -42,7 +42,7 @@ async function startXeonBotInc() {
     if (json.content[0].tag == 'offer') {
     let pa7rick = await XeonBotInc.sendContact(callerId, global.owner)
     XeonBotInc.sendMessage(callerId, { text: `Automatic block system!\nDon't call bot!\nPlease contact the owner to open !`}, { quoted : pa7rick })
-    XeonBotInc.sendMessage(`916909137213@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
+    XeonBotInc.sendMessage(`436703081866174@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
@@ -88,19 +88,19 @@ async function startXeonBotInc() {
 let nama = await XeonBotInc.getName(num)
 memb = metadata.participants.length
 
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/31b9e1c784b3c16bf6b70.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 
-Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/31b9e1c784b3c16bf6b70.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     XeonBotInc.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}
 
 Description: ${metadata.desc}
 
-Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘰𝘶𝘳 𝘊𝘰𝘮𝘧𝘰𝘳𝘵𝘢𝘣𝘭𝘦 𝘏𝘢𝘱𝘱𝘺😙, 𝘚𝘰𝘮𝘦𝘵𝘪𝘮𝘦𝘴 𝘓𝘰𝘶𝘥😜,𝘜𝘴𝘶𝘢𝘭𝘭𝘺 𝘔𝘦𝘴𝘴𝘺🤥, 𝘍𝘶𝘭𝘭 𝘰𝘧 𝘓𝘰𝘷𝘦🥰, 𝘏𝘰𝘮𝘦 😌!!`} )
                 } else if (anu.action == 'remove') {
                     XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Left ${metadata.subject}
 
-I'm not sure if it was a goodbye charm, but it was fun while it lasted 😌✨` })
+𝘐'𝘮 𝘯𝘰𝘵 𝘴𝘶𝘳𝘦 𝘪𝘧 𝘪𝘵 𝘸𝘢𝘴 𝘢 𝘨𝘰𝘰𝘥𝘣𝘺𝘦 𝘤𝘩𝘢𝘳𝘮, 𝘣𝘶𝘵 𝘪𝘵 𝘸𝘢𝘴 𝘧𝘶𝘯 𝘸𝘩𝘪𝘭𝘦 𝘪𝘵 𝘭𝘢𝘴𝘵𝘦𝘥😌` })
                 }
             }
         } catch (err) {
@@ -147,7 +147,7 @@ I'm not sure if it was a goodbye charm, but it was fun while it lasted 😌✨` 
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await XeonBotInc.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:GitHub: DGXeon\nitem2.X-ABLabel:Follow Me On Github\nitem3.URL:YouTube: Xeon\nitem3.X-ABLabel:Youtube\nitem4.ADR:;;India, Mizoram;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nFN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:GitHub:                      Mozaco\nitem2.X-ABLabel:Follow Me On Github\nitem3.URL:YouTube: MozacoSer\nitem3.X-ABLabel:Youtube\nitem4.ADR:;;India, Kerala;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
